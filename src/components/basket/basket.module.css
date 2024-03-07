@@ -1,0 +1,26 @@
+.container {
+    padding: 2vh 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .item {
+    background-color: rgba(233, 233, 233, 0.69);
+    padding: 0.5rem 0.25rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title {
+    font-weight: bolder;
+  }
+  
+  .totalPrice {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid black;
+  }
