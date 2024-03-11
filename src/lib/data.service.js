@@ -272,6 +272,19 @@ export const getProductsByRange = async (range) => {
 
 };
 
+
+export const getProductById = async (id) => {
+    try {
+        await dbConnect();
+
+        let result = await productModel.findById(id);
+
+        return result;
+    } catch (error) {
+        console.log(error);
+    }
+};
+
 /* 
 
     ORDERS

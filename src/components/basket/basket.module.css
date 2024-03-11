@@ -6,15 +6,22 @@
   }
   
   .item {
-    background-color: rgba(233, 233, 233, 0.69);
+    border-bottom: 1px solid pink;
     padding: 0.5rem 0.25rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
     align-items: center;
+    font-size: 12px;
+  }
+
+  .item img{
+    border-radius: 10px;
   }
   
   .title {
+    width: 60px;
     font-weight: bolder;
   }
   
@@ -22,5 +29,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    border-top: 1px solid black;
+    gap: 1rem;
+    font-weight: bolder;
+    border-bottom: 1px solid pink;
   }

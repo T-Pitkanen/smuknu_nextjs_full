@@ -1,26 +1,3 @@
-:root {
-
-  /* Global Variables */
-  --main-color: lightblue;
-
-  /* Component Specific Variables */
-  --box-color: #fff;
-}
-
-@media (prefers-color-scheme: dark) {
-
-  :root {
-    
-    /* Global Variables */
-    --main-color: #333;
-
-
-    /* Component Specific Variables */
-    --box-color: rgb(235, 235, 160);
-
-  }
-
-}
 
 * {
   box-sizing: border-box;
@@ -30,11 +7,11 @@
 
 html,
 body {
-  background-color: var(--main-color);
+  background-color: white;
 }
 
 body {
-  background-color: var(--main-color);
+  background-color: white;
   ;
 }
 
@@ -43,10 +20,3 @@ a {
   text-decoration: none;
 }
 
-
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}

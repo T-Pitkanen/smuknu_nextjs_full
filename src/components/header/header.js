@@ -1,51 +1,25 @@
 import Image from 'next/image';
 import styles from './header.module.css';
-import Link from 'next/link';
 
-const Header = ({ config }) => {
-	return (
-		<div className={styles.header}>
-			<div className={styles.container}>
-				<div
-					className={styles.content}
-					style={{ backgroundColor: config?.bodyBackground }}
-				>
-					<div>
-						<h1>
-							<span style={{ color: config.headline.one.color }}>
-								{config.headline.one.text}
-							</span>
-							<br />
-							<span style={{ color: config.headline.two.color }}>
-								{config.headline.two.text}
-							</span>
-						</h1>
+const Header = ({ image, title, subtitle }) => {
+    const titleStyle = {
+        color: title.color
+    };
 
-						<div
-							className={styles.body}
-							style={{ color: config.body.color }}
-							dangerouslySetInnerHTML={{ __html: config.body.text }}
-						></div>
+    const subtitleStyle = {
+        color: subtitle.color
+    };
 
-						{config.link?.url ? (
-							<a className={styles.btn} href={config.link?.url}>
-								{config.link?.text}
-							</a>
-						) : (
-							''
-						)}
-					</div>
-				</div>
-			</div>
+    return (
+        <div className={styles.header}>
+            {/* <img src={image} alt="Header Background" className={styles.headerImg} /> */}
 
-			<Image
-				src={config.image}
-				width={1200}
-				height={400}
-				alt={'image'}
-			></Image>
-		</div>
-	);
+            <div className={styles.headerText}>
+                <h1 className={styles.headerTitle} style={titleStyle}>{title.text}</h1>
+                {subtitle && <h1 className={styles.headerSubtitle} style={subtitleStyle}>{subtitle.text}</h1>}
+            </div>
+        </div>
+    );
 };
 
 export default Header;

@@ -1,0 +1,52 @@
+
+
+.footer {
+    background-color: #D9D9D9;
+    height: 243px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.social {
+
+    margin-top: 37px;
+    display: flex;
+
+}
+
+.icon {
+    color: #fff;
+    font-size: clamp(2.5rem, 4.5vw, 4rem);
+    margin: 0 10px;
+}
+
+.icon:hover{
+    transition: all 0.2s ease-in-out;
+    color: var(--color-pink);
+    cursor: pointer;
+    
+}
+
+
+.address {
+   
+    margin: 37px 0;
+
+}
+
+.address a{
+
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    margin: 5px 0;
+    
+}
+
+.address a:hover{
+    transition: all 0.2s ease-out;
+    color: var(--color-pink);
+    
+}

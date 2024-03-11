@@ -67,6 +67,8 @@ const Navigation = () => {
 				>
 					<Link href="/">Home</Link>
 					<Link href="/products">Produkter</Link>
+					<Link href="/sundhed">Spørg om sundhed</Link>
+					<Link href="/medlem">Bliv Medlem</Link>
 				</div>
 
 				<div className={`${styles.basket} ${basketActive}`}>

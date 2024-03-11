@@ -1,0 +1,52 @@
+/* 
+
+    Accordion Component Styling
+
+*/
+
+.accordion {
+    padding : 0 20px;
+}
+
+.accordion h2{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    align-items: center;
+}
+
+.body {
+    border-bottom: 1px solid pink;
+    padding : 20px 0;
+}
+
+.icon {
+    color : rgb(247, 223, 227);
+    font-size: 42px;
+}
+
+
+
+.textblock {
+    display: none;
+    padding-left: 63px;
+    padding-right: 20px;
+}
+
+/* 
+
+    Accordion Active
+
+*/
+
+
+.accordion.active .icon{
+    color : pink;
+}
+
+.accordion.active .textblock{
+    display: block;
+}

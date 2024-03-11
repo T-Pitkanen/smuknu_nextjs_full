@@ -1,4 +1,5 @@
 import Navigation from '@/components/navigation/navigation';
+import Footer from '@/components/footer/footer';
 
 export const metadata = {
     title: "Smuk Nu",
@@ -10,6 +11,7 @@ export default function siteLayout({ children }) {
 		<div>
 			<Navigation></Navigation>
 			{children}
+			<Footer />
 		</div>
 	);
 }

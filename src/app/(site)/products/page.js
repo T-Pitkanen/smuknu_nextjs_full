@@ -1,8 +1,8 @@
-import Header from '@/components/header/header';
+import FullTeaser from '@/components/fullteaser/fullteaser';
 import Products from '@/components/products/products';
 
 const ProductPage = () => {
-	const headerConfig = {
+	const teaserConfig = {
 		link: {
 			url: '',
 			text: '',
@@ -28,11 +28,11 @@ const ProductPage = () => {
 	return (
 		// <div className={`${styles['page-site']} page-wrapper`} ></div> This also works instead of line 30
 		<div className="page">
-			<Header config={headerConfig} />
-			<Products
-				config={{ black: 'ALT ER', pink: 'SKØNHED', recommended: false }}
-			></Products>
-		</div>
+		<FullTeaser config={teaserConfig} />
+		<Products
+			config={{ black: 'ALT ER', pink: 'SKØNHED', recommended: true }}
+		></Products>
+	</div>
 	);
 };
 
