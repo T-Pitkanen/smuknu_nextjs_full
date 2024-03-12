@@ -5,6 +5,7 @@
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { useBasket } from '@/context/basket';
+import styles from './page.module.css';
 
 
 const ProductPage = ({ params }) => {
@@ -32,14 +33,14 @@ const ProductPage = ({ params }) => {
     if (!product) return <div>Loading...</div>;
 
     return (
-        <div className={`page-wrapper`}>
-            <h1>{product.title}</h1>
+        <div className={styles.pageWrapper}>
+            
          
-            <img src={product.image} alt={product.title} width={300} height={300} />
-            <p>{product.description}</p>
-            <p>Price: {product.price} kr.</p>
-            <p>Discount: {product.discountInPercent ?? 0}%</p>
-            <button
+            <img className={styles.image} src={product.image} alt={product.title} width={300} height={300} />
+            <h1 className={styles.title}>{product.title}</h1>
+            <p className={styles.description}>{product.description}</p>
+            <p className={styles.price}> {product.price} kr.</p>
+            <button className={styles.btn}
             
             onClick={(e) => {
               e.preventDefault();
