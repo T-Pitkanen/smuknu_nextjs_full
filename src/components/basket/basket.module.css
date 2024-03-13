@@ -1,35 +1,55 @@
 .container {
-    padding: 2vh 5vw;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .item {
-    border-bottom: 1px solid pink;
-    padding: 0.5rem 0.25rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    align-items: center;
-    font-size: 12px;
-  }
+  padding: 2vh 5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 
-  .item img{
-    border-radius: 10px;
-  }
-  
-  .title {
-    width: 60px;
-    font-weight: bolder;
-  }
-  
-  .totalPrice {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-    font-weight: bolder;
-    border-bottom: 1px solid pink;
-  }
+.item {
+  border-bottom: 1px solid pink;
+  padding: 0.5rem 0.25rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  font-size: 12px;
+}
+
+.item img {
+  border-radius: 10px;
+}
+
+.title {
+  width: 60px;
+  font-weight: bolder;
+}
+
+.totalPrice {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  font-weight: bolder;
+  border-bottom: 1px solid pink;
+}
+
+
+.removeBtn {
+  background-color: #fd88a0;
+  padding: 0.35rem;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  font-size: 11px;
+  border: none;
+}
+
+.addBtn,
+.decreaseBtn {
+  background-color: #fd88a0;
+  padding: 0.1rem 0.35rem;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  font-size: 15px;
+  border: none;
+}

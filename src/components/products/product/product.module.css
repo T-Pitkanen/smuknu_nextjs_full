@@ -7,7 +7,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.productContainer{
+.productContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,11 +93,11 @@
   line-height: 12px;
   color: #fff;
   margin-left: 5px;
-  
+
 }
 
 .product .fbBtn {
-  background-color: black;
+  background-color: #fd88a0;
   border: 0;
   padding: 0.5rem 1rem;
   border-radius: 40px;
@@ -105,5 +105,5 @@
   line-height: 12px;
   color: #fff;
   margin-left: 5px;
-  
+
 }
