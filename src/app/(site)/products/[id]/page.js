@@ -25,8 +25,6 @@ const ProductPage = ({ params }) => {
 		}
 	}, [id]);
 
-	if (!product) return <div>...</div>;
-
 	return (
 		<div className={styles.pageWrapper}>
 			<img

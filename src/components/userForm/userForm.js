@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import styles from "./userForm.module.css";
 import { useState } from "react";
 
@@ -19,9 +18,6 @@ const UserForm = () => {
     }
   };
 
-  const closeModal = () => {
-    setShowModal(false);
-  };
 
   return (
     <div className={styles.container}>

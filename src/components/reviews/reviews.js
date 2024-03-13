@@ -1,6 +1,5 @@
 'use client'
 import Header from '../header/header';
-// import { getReviews } from '@/lib/data.service';
 import Review from './review';
 import styles from './reviews.module.css';
 import { useState, useEffect } from 'react';

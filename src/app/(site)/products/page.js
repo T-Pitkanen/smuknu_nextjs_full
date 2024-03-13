@@ -26,7 +26,7 @@ const ProductPage = () => {
 	};
 
 	return (
-		// <div className={`${styles['page-site']} page-wrapper`} ></div> This also works instead of line 30
+	
 		<div className="page">
 		<FullTeaser config={teaserConfig} />
 		<Products

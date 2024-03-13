@@ -6,11 +6,7 @@ const Review = ({review}) => {
     return <div className={styles.review}>
 
         <div className={styles.image}>
-
             <Image src={review.image} alt={review.name} width={150} height={150}/>
-
-           
-
         </div>
         <div className={styles.body} dangerouslySetInnerHTML={{__html : review.description}}></div>
 
