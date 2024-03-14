@@ -12,9 +12,11 @@ const UserForm = () => {
 
 	const handleSubmit = async (event) => {
 		event.preventDefault();
+	
 		if (event.target.name.value === '') {
 			setErrorMessage('Name is required');
 		} else {
+			
 			const [name, email, comment] = event.target.elements;
 
 			setName(name.value);

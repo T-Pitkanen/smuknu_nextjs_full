@@ -13,6 +13,9 @@ const Navigation = () => {
 
 	const { basket, name } = useBasket();
 
+	// The number of unique items in the basket
+	const totalUniqueItems = new Set(basket.map((item) => item.id)).size;
+
 	//close basket, open menu, if menu is open, close it
 	const handleToggleMenu = () => {
 		setBasketOpen(false);
@@ -54,7 +57,7 @@ const Navigation = () => {
 				<div className={styles.actions}>
 					<div onClick={handleToggleBasket} className={styles.cart}>
 						<FaCartShopping />
-						<div className={styles.cartCount}>{totalItems}</div>
+						<div className={styles.cartCount}>{totalUniqueItems}</div>
 					</div>
 					<div onClick={handleToggleMenu}>
 						<FaBars className={styles.bars} />
