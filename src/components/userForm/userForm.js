@@ -12,18 +12,23 @@ const UserForm = () => {
 	const [errorMessage, setErrorMessage] = useState('');
 
 	const handleSubmit = async (event) => {
+		//prevent the default behavior of the form
 		event.preventDefault();
 
+		//checks if the name field is empty, if yes, sets the error message
 		if (event.target.name.value === '') {
 			setErrorMessage('Name is required');
+			//if the name field is not empty, it retrieves the values from the form and updates the state variables
 		} else {
 			const [name, email, comment] = event.target.elements;
 
 			setName(name.value);
 			setEmail(email.value);
 			setComment(comment.value);
+			//shows the modal
 			setShowModal(true);
 
+			//POST request to the /subscriber endpoint
 			const response = await fetch(`${API_BASE_URL}/subscriber`, {
 				method: 'POST',
 				headers: {
@@ -35,6 +40,8 @@ const UserForm = () => {
 					comment: comment.value,
 				}),
 			});
+
+			//updates the name state with the returned data
 			const data = await response.json();
 			setName(data.data.name);
 			console.log('User', data);
@@ -49,6 +56,7 @@ const UserForm = () => {
 					<input
 						type="text"
 						name="name"
+						//use this name as modals name
 						value={name}
 						//when user types, update name state with the current value
 						onChange={(e) => setName(e.target.value)}
