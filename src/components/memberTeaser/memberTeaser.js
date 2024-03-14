@@ -1,6 +1,5 @@
-import Image from 'next/image';
+
 import styles from './memberTeaser.module.css';
-import Link from 'next/link';
 
 const MemberTeaser = () => {
 	return (

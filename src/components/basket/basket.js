@@ -2,6 +2,7 @@ import { useBasket } from '@/context/basket';
 import styles from './basket.module.css';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { API_BASE_URL } from '@/config/apiConfig';
 
 const Basket = () => {
 	//useBasket hook to get the current state of basket
@@ -17,7 +18,7 @@ const Basket = () => {
 
 			//if there is any IDS in the basket, fetch the products
 			if (idRange.length > 0) {
-				let products = await fetch('api/products?range=' + idRange);
+				let products = await fetch(`${API_BASE_URL}/products?range=${idRange}`);
 				products = await products.json();
 
 				//fetched products are being mapped over. Finds the product in the basket and adds the amount to the product.

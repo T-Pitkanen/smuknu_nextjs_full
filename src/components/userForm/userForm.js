@@ -2,6 +2,7 @@
 
 import styles from './userForm.module.css';
 import { useState } from 'react';
+import { API_BASE_URL } from '@/config/apiConfig';
 
 const UserForm = () => {
 	const [showModal, setShowModal] = useState(false);
@@ -12,11 +13,10 @@ const UserForm = () => {
 
 	const handleSubmit = async (event) => {
 		event.preventDefault();
-	
+
 		if (event.target.name.value === '') {
 			setErrorMessage('Name is required');
 		} else {
-			
 			const [name, email, comment] = event.target.elements;
 
 			setName(name.value);
@@ -24,7 +24,7 @@ const UserForm = () => {
 			setComment(comment.value);
 			setShowModal(true);
 
-			const response = await fetch('/api/subscriber', {
+			const response = await fetch(`${API_BASE_URL}/subscriber`, {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',

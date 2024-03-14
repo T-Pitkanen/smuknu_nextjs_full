@@ -3,13 +3,15 @@ import Header from '../header/header';
 import Review from './review';
 import styles from './reviews.module.css';
 import { useState, useEffect } from 'react';
+import { API_BASE_URL } from '@/config/apiConfig';
 
 const Reviews = () => {
 	const [reviewsData, setReviewsData] = useState([]);
 
 	useEffect(() => {
 		const getReviews = async () => {
-			const response = await fetch('/api/reviews');
+			const response = await fetch(`${API_BASE_URL}/reviews`);
+
 			const data = await response.json();
 			setReviewsData(data);
 		};
@@ -41,7 +43,6 @@ const Reviews = () => {
 			</div>
 		</div>
 	);
-	
 };
 
 export default Reviews;

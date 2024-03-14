@@ -1,4 +1,4 @@
-import Image from 'next/image';
+
 import styles from './header.module.css';
 
 const Header = ({ image, title, subtitle }) => {
