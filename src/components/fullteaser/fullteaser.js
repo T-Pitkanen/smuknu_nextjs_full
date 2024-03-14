@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import styles from './fullteaser.module.css';
-import Link from 'next/link';
 
 const FullTeaser = ({ config }) => {
 	return (

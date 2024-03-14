@@ -2,7 +2,6 @@
 import Products from "@/components/products/products";
 import FullTeaser from "@/components/fullteaser/fullteaser";
 import Reviews from "@/components/reviews/reviews";
-import Review from "@/components/reviews/review";
 import MemberTeaser from "@/components/memberTeaser/memberTeaser";
 
 export default function Home() {

@@ -13,6 +13,7 @@ const Navigation = () => {
 
 	const { basket, name } = useBasket();
 
+	//close basket, open menu, if menu is open, close it
 	const handleToggleMenu = () => {
 		setBasketOpen(false);
 		setMenuOpen(!menuOpen);
@@ -23,6 +24,7 @@ const Navigation = () => {
 		setBasketOpen(!basketOpen);
 	};
 
+	//close both menu and basket
 	const handleCloseMenus = () => {
 		setMenuOpen(false);
 		setBasketOpen(false);
@@ -55,7 +57,7 @@ const Navigation = () => {
 						<div className={styles.cartCount}>{totalItems}</div>
 					</div>
 					<div onClick={handleToggleMenu}>
-						<FaBars className={styles.bars}/>
+						<FaBars className={styles.bars} />
 					</div>
 				</div>
 			</div>
