@@ -19,7 +19,7 @@ const Product = ({ product }) => {
   const { basket, addToBasket } = useBasket();
 
   return (
-    <Link className={styles.productContainer} href={`/products/${product._id}`}>
+    <div className={styles.productContainer}>
       <div className={styles.product}>
         <PercentBox
           percent={product.discountInPercent ? product.discountInPercent : 0}
@@ -46,7 +46,7 @@ const Product = ({ product }) => {
           </button>
         </div>
       </div>
-    </Link>
+    </div>
   );
 };
 export default Product;

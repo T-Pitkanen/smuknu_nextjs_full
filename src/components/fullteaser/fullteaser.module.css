@@ -41,14 +41,17 @@
 }
 
 .cta .content .btn {
-    margin-top: 40px;
-    background-color: var(--color-pink);
-    border: 0;
-    padding: 22px 40px;
-    border-radius: 40px;
-    font-weight: 700;
     display: block;
+    background-color: #fd88a0;
+    border: 0;
+    padding: 1rem 0.5rem;
+    border-radius: 40px;
+    font-size: 16px;
+    line-height: 12px;
     color: #fff;
+    margin: auto;
+    margin-top: 2rem;
+    width: 60%;
 }
 
 .cta .content h1 {
